@@ -2,7 +2,7 @@
 var running = keyboard_check(keySprint)
 var leftPress = keyboard_check(keyLeft)
 var rightPress = keyboard_check(keyRight)
-var jumpPress = keyboard_check(keyJump)
+var jumpPress = keyboard_check_pressed(keyJump)
 
 if(global.useController)
 {
@@ -20,7 +20,7 @@ if(global.useController)
 if(leftPress && !hit)
 {
 	hsp -= (walkSpeed + running*runSpeed)
-	if(onGround )	
+	if(onGround  && sprite_index != spr_playerJump)	
 	{
 		sprite_index = spr_playerWalk
 		sprite = "walk"
@@ -35,7 +35,7 @@ if(leftPress && !hit)
 else if(rightPress  && !hit)
 {
 	hsp += (walkSpeed + running*runSpeed)
-	if(onGround )	
+	if(onGround  && sprite_index != spr_playerJump)	
 	{
 		sprite_index = spr_playerWalk
 		sprite = "walk"
@@ -47,7 +47,7 @@ else if(rightPress  && !hit)
 		image_speed = 1
 			
 }
-else if(onGround && !hit)
+else if(onGround && !hit && sprite_index != spr_playerJump)
 {
 	sprite_index = spr_playerIdle
 	sprite = "idle"
@@ -56,10 +56,18 @@ else if(onGround && !hit)
 //Jump
 if(onGround && jumpPress && !hit)
 {
-	vsp -= jumpSpeed
-	jumping = 1	
+	
+	jumping = 1
+	jumped = 0
 	sprite_index = spr_playerJump
+	image_index = 0
 	sprite = "jump"
+}
+
+if(sprite_index = spr_playerJump && floor(image_index) = 1 && !jumped)
+{
+	vsp -= jumpSpeed
+	jumped = 1
 }
 
 //Friction and gravity
@@ -67,7 +75,8 @@ if(onGround)
 {
 	hsp*=fric
 }
-vsp += grav - jumpPress*float
+if(sprite_index != spr_playerJump)
+	vsp += grav - jumpPress*float
 
 
 //Limit Speed

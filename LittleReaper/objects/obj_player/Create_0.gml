@@ -1,13 +1,16 @@
+
+depth  = -50
 hsp = 0
 hMax = 8
-walkSpeed = 3
-runSpeed = 1
+walkSpeed = 2.5
+runSpeed = .75
 runMax = 12
 
 vsp = 0
 vMax = 28
-jumpSpeed = 22
+jumpSpeed = 19
 jumping = 1
+jumped = 0
 grav = 1.25
 float = .5
 fric = .7

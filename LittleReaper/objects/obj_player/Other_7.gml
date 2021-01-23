@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self()
-draw_text(x,y-59,hsp)
+if(sprite_index = spr_playerJump)
+	sprite_index = spr_playerIdle
