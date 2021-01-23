@@ -2,11 +2,13 @@
 // You can write your code in this editor
 if(!swing)
 	{
-	image_angle+=image_xscale
-	rotate++
+	rotation*=rotateIncrease
+	image_angle+=image_xscale*rotation
+	rotate+=rotation
 	if(rotate>=rotateMax)
 	{
 		swing = 1
 		swingSpeed = (rotate/rotateMax)*swingMax
+		rotation = 1
 	}
 }	
