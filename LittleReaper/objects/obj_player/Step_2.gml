@@ -2,7 +2,7 @@
 var running = keyboard_check(keySprint)
 var leftPress = keyboard_check(keyLeft)
 var rightPress = keyboard_check(keyRight)
-var jumpPress = keyboard_check_pressed(keyJump)
+var jumpPress = keyboard_check(keyJump)
 
 if(global.useController)
 {
@@ -54,7 +54,7 @@ else if(onGround && !hit && sprite_index != spr_playerJump)
 }
 
 //Jump
-if(onGround && jumpPress && !hit)
+if(onGround && jumpPress && !hit && !jumping)
 {
 	
 	jumping = 1
@@ -73,9 +73,10 @@ if(sprite_index = spr_playerJump && floor(image_index) = 1 && !jumped)
 //Friction and gravity
 if(onGround)
 {
+	jumping = 0
 	hsp*=fric
 }
-if(sprite_index != spr_playerJump)
+if(sprite_index != spr_playerJump )
 	vsp += grav - jumpPress*float
 
 
