@@ -74,6 +74,7 @@ if(sprite_index = spr_playerJump && floor(image_index) = 1 && !jumped)
 if(onGround)
 {
 	jumping = 0
+	float = floatStart
 	hsp*=fric
 }
 else
@@ -84,9 +85,11 @@ if(sprite_index != spr_playerJump )
 {
 	var floating = 0
 	if(jumpPress && vsp < -vMax/4)
+	{
 		floating = float 
-	else if(jumpPress && vsp < vMax/4)
-		floating = float/2
+		float*=.93	
+	}
+
 	vsp += grav - floating
 	
 }

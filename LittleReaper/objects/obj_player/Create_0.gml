@@ -8,11 +8,12 @@ runMax = 6
 
 vsp = 0
 vMax = 30
-jumpSpeed = 16
+jumpSpeed = 17
 jumping = 0
 jumped = 0
 grav = 1.5
-float = 1
+float = 1.5
+floatStart = 1.5
 fric = .75
 onGround = 0
 hitLeft = 0
