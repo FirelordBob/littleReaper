@@ -33,3 +33,6 @@ keySprint = vk_shift
 keyJump = vk_space
 
 global.useController = 0
+
+scythe = instance_create_depth(x,y,depth-1,obj_scythe)
+scythe.player = id
