@@ -2,6 +2,7 @@
 // You can write your code in this editor
 player = noone
 swing = 0
+swingSpeed = 0
 swingMax = 45
 rotateMax =180
 swingFalloff = .98

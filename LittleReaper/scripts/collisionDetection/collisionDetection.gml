@@ -2,7 +2,7 @@ function collisionDetection(argument0) {
 	var object = argument0
 	var xx = x
 	var yy = y
-
+	
 	if vsp > 0 && (position_meeting(bbox_left,y+vsp,object) || position_meeting(x,y+vsp,object) || position_meeting(bbox_right,y+vsp,object))
 	{
 		onGround = 1
@@ -37,7 +37,7 @@ function collisionDetection(argument0) {
 	var maxAttempts = 1000
 	var x1 = xx
 	var y1 = yy
-	if(place_meeting(x,y,object))
+	if(place_meeting(x,y,object) && instance_place(x,y,object) != id)
 	{
 		if(hitLeft || hitRight)
 			x = xx
@@ -63,12 +63,18 @@ function collisionDetection(argument0) {
 		if(hitLeft || hitRight)
 		{
 			x = x1
-			hsp = 0	
+			if(!bounce || hsp < 2)
+				hsp = 0	
+			else
+				hsp = -hsp/2
 		}
 		if(onGround || hitUp)
 		{
 			y = y1
-			vsp = 0	
+			if(!bounce || vsp < 2)
+				vsp = 0	
+			else
+				vsp = -vsp/2
 		}
 	
 	}

@@ -31,7 +31,7 @@ keyLeft = ord("A")
 keyRight = ord("D")
 keySprint = vk_shift
 keyJump = vk_space
-
+bounce = 0
 global.useController = 0
 
 scythe = instance_create_depth(x,y,depth-1,obj_scythe)
