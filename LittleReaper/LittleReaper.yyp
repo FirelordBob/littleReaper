@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"checkCollision","path":"scripts/checkCollision/checkCollision.yy",},"order":1,},
     {"id":{"name":"spr_playerJump","path":"sprites/spr_playerJump/spr_playerJump.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_scythe","path":"objects/obj_scythe/obj_scythe.yy",},"order":2,},

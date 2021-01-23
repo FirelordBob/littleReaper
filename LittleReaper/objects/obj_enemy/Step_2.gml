@@ -26,8 +26,24 @@ if(vsp < -vMax)
 
 //Check Collision
 
-collisionDetection(obj_floor)
 
+if(place_meeting(x,y,obj_enemy) && instance_place(x,y,obj_enemy) != id)
+{
+	
+	with(instance_place(x,y,obj_enemy))
+	{
+		vsp = (vsp + other.vsp)/2 + irandom_range(-2,2)
+		hsp = (hsp + other.hsp)/2 + irandom_range(-2,2)
+		other.vsp = (vsp + other.vsp)/2 + irandom_range(-2,2)
+		other.hsp = (hsp + other.hsp)/2 + irandom_range(-2,2)
+		collisionDetection(obj_enemy)
+		
+	}
+	
+	collisionDetection(obj_enemy)
+	
+}
+collisionDetection(obj_floor)
 
 while(bbox_left < 0)
 {
@@ -41,4 +57,11 @@ while(bbox_right > room_width)
 	x--
 	if(hsp > 0)	
 		hsp = 0	
+}
+
+if(invuln)
+{
+	invulnTimer--
+	if(invulnTimer == 0)
+		invuln = 0
 }
