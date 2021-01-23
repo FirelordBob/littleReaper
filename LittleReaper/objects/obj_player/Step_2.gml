@@ -26,7 +26,7 @@ if(leftPress && !hit)
 		sprite = "walk"
 	}
 	image_xscale = -1
-	if(running)
+	if(running && sprite_index == spr_playerWalk)
 		image_speed = 1.5
 	else
 		image_speed = 1
@@ -76,15 +76,27 @@ if(onGround)
 	jumping = 0
 	hsp*=fric
 }
+else
+	hsp*=fric+.15
+
+	
 if(sprite_index != spr_playerJump )
-	vsp += grav - jumpPress*float
+{
+	var floating = 0
+	if(jumpPress && vsp < -vMax/4)
+		floating = float 
+	else if(jumpPress && vsp < vMax/4)
+		floating = float/2
+	vsp += grav - floating
+	
+}
 
 
 //Limit Speed
 if(hsp > hMax + running*runMax)
-	hsp = hMax
+	hsp = hMax+ running*runMax
 if(hsp < -hMax - running*runMax)
-	hsp = -hMax
+	hsp = -hMax - running*runMax
 	
 	
 if(vsp > vMax)
