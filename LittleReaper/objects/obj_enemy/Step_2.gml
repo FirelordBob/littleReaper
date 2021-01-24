@@ -41,19 +41,6 @@ if(vsp < -vMax)
 //Check Collision
 collisionDetection(obj_floor)
 
-while(bbox_left < 0)
-{
-	x++
-	if(hsp < 0)	
-		hsp = 0
-}
-	
-while(bbox_right > room_width)
-{
-	x--
-	if(hsp > 0)	
-		hsp = 0	
-}
 
 if(invuln)
 {

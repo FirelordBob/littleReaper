@@ -7,4 +7,7 @@ if(!invuln && other.swing)
 	alarm[0] = invulnTimer
 	invuln = 1
 	reflected = 1
+	alarm[1] += deathTimer/2
+	if(alarm[1] > deathTimer)
+		alarm[1] = deathTimer
 }

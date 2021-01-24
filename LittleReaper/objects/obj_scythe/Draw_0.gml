@@ -15,11 +15,8 @@ else if rotate > 1 {
 }
 
 
-var pX =  x - camera_get_view_x(view_camera[0]);
-var pY =  player.y - player.sprite_height - camera_get_view_y(view_camera[0]);
-pX *= display_get_gui_width() / camera_get_view_width(view_camera[0])
-pY *= display_get_gui_height() / camera_get_view_height(view_camera[0])
-
+var pX =  x
+var pY =  player.y - player.sprite_height
 
 if(maxRotation && floor(maxCount/4) mod 2 = 0)
 {

@@ -1,15 +1,18 @@
 {
   "resources": [
+    {"id":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"order":11,},
     {"id":{"name":"spr_playerJump","path":"sprites/spr_playerJump/spr_playerJump.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_scythe","path":"objects/obj_scythe/obj_scythe.yy",},"order":2,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":4,},
     {"id":{"name":"spr_dying","path":"sprites/spr_dying/spr_dying.yy",},"order":7,},
+    {"id":{"name":"room_scroll","path":"rooms/room_scroll/room_scroll.yy",},"order":2,},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},"order":3,},
     {"id":{"name":"collisionDetection","path":"scripts/collisionDetection/collisionDetection.yy",},"order":0,},
     {"id":{"name":"spr_popSpawn","path":"sprites/spr_popSpawn/spr_popSpawn.yy",},"order":9,},
     {"id":{"name":"obj_soul","path":"objects/obj_soul/obj_soul.yy",},"order":6,},
     {"id":{"name":"spr_playerWalk","path":"sprites/spr_playerWalk/spr_playerWalk.yy",},"order":0,},
+    {"id":{"name":"obj_enemyControl","path":"objects/obj_enemyControl/obj_enemyControl.yy",},"order":12,},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":8,},
     {"id":{"name":"spr_scythe","path":"sprites/spr_scythe/spr_scythe.yy",},"order":4,},
     {"id":{"name":"spr_bigRat","path":"sprites/spr_bigRat/spr_bigRat.yy",},"order":8,},
@@ -17,8 +20,10 @@
     {"id":{"name":"spr_popExplode","path":"sprites/spr_popExplode/spr_popExplode.yy",},"order":11,},
     {"id":{"name":"spr_powermeter","path":"sprites/spr_powermeter/spr_powermeter.yy",},"order":6,},
     {"id":{"name":"Room0","path":"rooms/Room0/Room0.yy",},"order":1,},
+    {"id":{"name":"obj_playerCam","path":"objects/obj_playerCam/obj_playerCam.yy",},"order":10,},
     {"id":{"name":"obj_bigRat","path":"objects/obj_bigRat/obj_bigRat.yy",},"order":7,},
     {"id":{"name":"shd_white_sprite","path":"shaders/shd_white_sprite/shd_white_sprite.yy",},"order":0,},
+    {"id":{"name":"obj_roomSetup","path":"objects/obj_roomSetup/obj_roomSetup.yy",},"order":9,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":3,},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},"order":1,},
     {"id":{"name":"spr_rat","path":"sprites/spr_rat/spr_rat.yy",},"order":5,},
@@ -46,6 +51,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Room0","path":"rooms/Room0/Room0.yy",},},
+    {"roomId":{"name":"room_scroll","path":"rooms/room_scroll/room_scroll.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [

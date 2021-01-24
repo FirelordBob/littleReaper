@@ -36,3 +36,6 @@ global.useController = 0
 
 scythe = instance_create_depth(x,y,depth-1,obj_scythe)
 scythe.player = id
+
+with instance_create_depth(x,y,depth,obj_playerCam)
+	player = other.id
