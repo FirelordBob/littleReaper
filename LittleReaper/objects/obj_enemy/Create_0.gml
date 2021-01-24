@@ -28,3 +28,4 @@ hit = 0
 hitTimer = 0
 hitMax = 120
 hp = 2
+souls = 1

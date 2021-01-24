@@ -8,4 +8,3 @@ for(var i=-12; i < room_width/blockSize + 12; i++ )
 	instance_create_depth(i*blockSize,0,50,obj_floor)	
 	
 }
-
