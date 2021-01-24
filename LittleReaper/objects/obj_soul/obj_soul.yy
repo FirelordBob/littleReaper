@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_floor",
-    "path": "sprites/spr_floor/spr_floor.yy",
+    "name": "spr_dying",
+    "path": "sprites/spr_dying/spr_dying.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"parent":{"name":"obj_soul","path":"objects/obj_soul/obj_soul.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_floor",
+  "name": "obj_soul",
   "tags": [],
   "resourceType": "GMObject",
 }
