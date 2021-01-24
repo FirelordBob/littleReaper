@@ -6,11 +6,11 @@ if(!invuln && !hit)
 	hsp = 0
 	if(image_xscale = 1)
 	{
-		instance_create_depth(bbox_left - 40, y-sprite_height,depth-2,obj_projectile)
+		instance_create_depth(bbox_left - 40, y-sprite_height/2,depth-2,obj_projectile)
 	}
 	else 
 	{
-		instance_create_depth(bbox_right- 40, y-sprite_height,depth-2,obj_projectile)
+		instance_create_depth(bbox_right + 40, y-sprite_height/2,depth-2,obj_projectile)
 	}
 	alarm[0] = fireAlarm
 	stand = 1
