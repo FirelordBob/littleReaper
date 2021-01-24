@@ -1,14 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(!swing)
+if(!swing && !(rotate>=rotateMax))
 	{
 	rotation*=rotateIncrease
 	image_angle+=image_xscale*rotation
 	rotate+=rotation
-	if(rotate>=rotateMax)
-	{
-		swing = 1
-		swingSpeed = (rotate/rotateMax)*swingMax
-		rotation = 1
-	}
-}	
+	}	
+else if(!swing)
+{
+	maxRotation = 1
+	maxCount++
+}

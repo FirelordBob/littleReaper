@@ -4,5 +4,7 @@
 	{
 		swing = 1
 		swingSpeed = (rotate/rotateMax)*swingMax
-		rotation = 1
+		rotation = rotationBase
+		maxRotation = 0
+		maxCount = 0
 	}
