@@ -1,17 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 hsp = 0
-hMax = 40
+hMax = 30
 walkSpeed = 2
 runSpeed = .5
 runMax = 6
 
 vsp = 0
-vMax = 40
+vMax = 30
 jumpSpeed = 17
 jumping = 0
 jumped = 0
-grav = 0.5
+grav = .4
 float = 1.5
 floatStart = 1.5
 fric = .75

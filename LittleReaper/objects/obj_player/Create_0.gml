@@ -3,8 +3,8 @@ depth  = -50
 hsp = 0
 hMax = 6
 walkSpeed = 2
-runSpeed = .5
-runMax = 6
+runSpeed = 1
+runMax = 8
 
 vsp = 0
 vMax = 30

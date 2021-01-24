@@ -11,3 +11,5 @@ returnScythe = 0
 returnSpeed = 10
 rotate = 0
 rotation = 1
+baseAngle = 30
+image_angle = baseAngle
