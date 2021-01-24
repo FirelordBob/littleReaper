@@ -25,5 +25,5 @@ if(maxRotation && floor(maxCount/4) mod 2 = 0)
 {
 	index_to_draw = 0
 }
-draw_sprite_ext(spr_powermeter,index_to_draw,pX,pY,1,1,90,c_white,1)
-draw_self()
+draw_sprite_ext(spr_powermeter,index_to_draw,pX+irandom_range(-maxRotation,maxRotation),pY+irandom_range(-maxRotation,maxRotation),1,1,90,c_white,1)
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle+irandom_range(-maxRotation,maxRotation),image_blend,image_alpha)
