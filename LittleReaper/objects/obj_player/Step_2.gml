@@ -78,7 +78,7 @@ if(onGround)
 	hsp*=fric
 }
 else
-	hsp*=fric+.15
+	hsp*=fric+.05
 
 	
 if(sprite_index != spr_playerJump )
