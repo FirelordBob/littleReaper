@@ -10,4 +10,11 @@ if(!other.invuln)
 	//other.vsp = sin(degtorad(image_angle-75))*swingSpeed + irandom_range(-3,-13)
 	other.invuln = 1
 	other.invulnTimer = other.timerMax
+	
+	other.hit = 1
+	other.hitTimer = other.hitMax
+	other.bounce = 1
+	other.hp -= 1
+	if(other.hp <= 0)
+		instance_destroy(other)
 }

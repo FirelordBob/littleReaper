@@ -37,7 +37,7 @@ function collisionDetection(argument0) {
 	var maxAttempts = 1000
 	var x1 = xx
 	var y1 = yy
-	if(place_meeting(x,y,object) && instance_place(x,y,object) != id)
+	if(place_meeting(x,y,object))
 	{
 		if(hitLeft || hitRight)
 			x = xx
@@ -66,7 +66,7 @@ function collisionDetection(argument0) {
 			if(!bounce || abs(hsp) < 5)
 				hsp = 0	
 			else
-				hsp = -hsp/1.1
+				hsp = -hsp/2
 		}
 		if(onGround || hitUp)
 		{
@@ -74,7 +74,7 @@ function collisionDetection(argument0) {
 			if(!bounce || abs(vsp) < 5)
 				vsp = 0	
 			else
-				vsp = -vsp/1.1
+				vsp = -vsp/2
 		}
 	
 	}
