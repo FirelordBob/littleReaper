@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(!other.invuln)
+if(!other.invuln && swing && other.hp>0)
 {
-	other.hsp = ((other.x - player.x)/(sprite_height/2))*other.hMax*((swingSpeed+5)/swingMax) 
+	other.hsp = ((other.x - player.x)/(sprite_height/2))*other.hMax*((swingSpeed+5)*2/swingMax) 
 	other.vsp = -(((other.y - other.sprite_height/2) - (player.y - player.sprite_height/2))/(sprite_height/2))*other.vMax*((swingSpeed+5)/swingMax)
 	
 	
@@ -15,6 +15,5 @@ if(!other.invuln)
 	other.hitTimer = other.hitMax
 	other.bounce = 1
 	other.hp -= 1
-	if(other.hp <= 0)
-		instance_destroy(other)
+
 }

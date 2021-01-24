@@ -4,6 +4,12 @@ if(instance_exists(player))
 {
 	x = player.x
 	y = player.y
+	
+	if(player.hit)
+	{
+		x += irandom_range(-player.alarm[0]/2,player.alarm[0]/2)
+		
+	}
 
 
 var viewW = view_wport[0]

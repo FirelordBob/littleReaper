@@ -27,10 +27,10 @@ else
 	vsp += grav
 
 //Limit Speed
-if(hsp > hMax)
-	hsp = hMax + hMax*invuln
-if(hsp < -hMax)
-	hsp = -hMax - hMax*invuln
+if(hsp > hMax*hp + hMax*invuln)
+	hsp = hMax*hp + hMax*invuln
+if(hsp < -hMax*hp - hMax*invuln)
+	hsp = -hMax*hp - hMax*invuln
 	
 	
 if(vsp > vMax)
@@ -39,8 +39,16 @@ if(vsp < -vMax)
 	vsp = -vMax
 
 //Check Collision
-collisionDetection(obj_floor)
-
+if(hp > 0)
+{
+	collisionDetection(obj_floor)
+	
+}
+else
+{
+	y += vsp
+	x += hsp
+}
 
 if(invuln)
 {
@@ -57,4 +65,23 @@ if(hit)
 		hit = 0
 		bounce = 0	
 	}
+}
+
+if(hp <= 0)
+{
+	invuln = 1
+	onGround = 0
+
+	if(alarm[0] = -1)
+	{
+	depth = 70
+	alarm[0] = 300
+	
+	image_yscale = - 1
+	y += sprite_height
+	with(instance_create_depth(x,y,depth-1,obj_soul))
+		follow = other.id
+	}
+	
+	
 }
