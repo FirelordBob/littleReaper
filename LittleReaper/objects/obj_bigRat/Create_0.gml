@@ -32,7 +32,7 @@ hitMax = 120
 hp = 15
 
 fireAlarm = 180
-alarm[0] = fireAlarm
+alarm[0] = fireAlarm/3
 moveTimer = 30
 stand = 0
 
