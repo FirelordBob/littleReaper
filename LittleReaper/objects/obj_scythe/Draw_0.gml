@@ -23,7 +23,7 @@ pY *= display_get_gui_height() / camera_get_view_height(view_camera[0])
 
 if(maxRotation && floor(maxCount/4) mod 2 = 0)
 {
-	index_to_draw = 0
+	index_to_draw = 1
 }
 
 
