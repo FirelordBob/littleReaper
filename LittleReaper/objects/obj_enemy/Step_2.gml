@@ -25,24 +25,6 @@ if(vsp < -vMax)
 	vsp = -vMax
 
 //Check Collision
-
-
-if(place_meeting(x,y,obj_enemy) && instance_place(x,y,obj_enemy) != id)
-{
-	
-	with(instance_place(x,y,obj_enemy))
-	{
-		vsp = (vsp + other.vsp)/2 + irandom_range(-2,2)
-		hsp = (hsp + other.hsp)/2 + irandom_range(-2,2)
-		other.vsp = (vsp + other.vsp)/2 + irandom_range(-2,2)
-		other.hsp = (hsp + other.hsp)/2 + irandom_range(-2,2)
-		collisionDetection(obj_enemy)
-		
-	}
-	
-	collisionDetection(obj_enemy)
-	
-}
 collisionDetection(obj_floor)
 
 while(bbox_left < 0)

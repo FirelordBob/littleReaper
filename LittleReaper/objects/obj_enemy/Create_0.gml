@@ -21,6 +21,6 @@ hitRight = 0
 hitUp = 0
 
 invuln = 0
-timerMax = 10
+timerMax = 20
 invulnTimer = 0
 bounce = 1

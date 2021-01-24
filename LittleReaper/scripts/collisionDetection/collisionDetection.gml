@@ -63,7 +63,7 @@ function collisionDetection(argument0) {
 		if(hitLeft || hitRight)
 		{
 			x = x1
-			if(!bounce || abs(hsp) < 2)
+			if(!bounce || abs(hsp) < 5)
 				hsp = 0	
 			else
 				hsp = -hsp/1.1
@@ -71,7 +71,7 @@ function collisionDetection(argument0) {
 		if(onGround || hitUp)
 		{
 			y = y1
-			if(!bounce || abs(vsp) < 2)
+			if(!bounce || abs(vsp) < 5)
 				vsp = 0	
 			else
 				vsp = -vsp/1.1
