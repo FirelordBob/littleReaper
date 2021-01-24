@@ -45,6 +45,7 @@ if(player != noone)
 			image_angle = 360 -baseAngle
 			returnScythe = 0
 			swing = 0
+			
 				
 		}
 	}
