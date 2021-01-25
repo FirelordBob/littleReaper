@@ -9,5 +9,5 @@ other.invulnTimer = other.timerMax
 other.sprite_index = spr_popExplode
 other.speed = 0	
 
-
+audio_play_sound(snd_hit,0,0)
 }

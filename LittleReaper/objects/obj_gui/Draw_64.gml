@@ -25,7 +25,7 @@ else if(roundStart && !roundOver)
 	draw_set_font(Font1)
 	draw_text(display_get_gui_width()/2,display_get_gui_height()/2,"Collect " + string(goal) + " Souls!")
 	draw_set_font(Font3)
-	draw_text(display_get_gui_width()/2,display_get_gui_height()*3/4,"Press Space to Start!")
+	draw_text(display_get_gui_width()/2,display_get_gui_height()*3/4,"Press E to Start!")
 }
 else if(roundOver && !roundStart)
 {
@@ -37,14 +37,14 @@ else if(roundOver && !roundStart)
 	{
 		draw_text(display_get_gui_width()/2,display_get_gui_height()/2+ 100,"Complete!")
 		draw_set_font(Font3)
-		draw_text(display_get_gui_width()/2,display_get_gui_height()*3/4,"Press Space for Next Level!")
+		draw_text(display_get_gui_width()/2,display_get_gui_height()*3/4,"Press E for Next Level!")
 		complete = 1
 	}
 	else
 	{
 		draw_text(display_get_gui_width()/2,display_get_gui_height()/2+ 100,"Try Again!")
 		draw_set_font(Font3)
-		draw_text(display_get_gui_width()/2,display_get_gui_height()*3/4,"Press Space to Restart Level")
+		draw_text(display_get_gui_width()/2,display_get_gui_height()*3/4,"Press E to Restart Level")
 		complete = 0
 	}
 }

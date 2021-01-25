@@ -15,6 +15,7 @@ if(!other.invuln && swing)
 	other.hitTimer = other.hitMax
 	other.bounce = 1
 	other.hp -= 1
+	audio_play_sound(snd_hitEnemy,0,0)
 	if(other.hp <= 0)
 		instance_destroy(other)
 }

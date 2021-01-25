@@ -6,4 +6,5 @@ hit = 1
 alarm[0] = hitTime/2
 other.invuln = 1
 other.invulnTimer = other.timerMax*2
+audio_play_sound(snd_hit,0,0)
 }

@@ -14,4 +14,7 @@ draw_set_font(Font3)
 draw_set_halign(fa_left)
 draw_set_valign(fa_middle)
 if(alarm[0] = -1)
-draw_text(dialogueX+10,dialogueY + dialogueHeight-10,"Press Space To Continue")
+{
+draw_text(dialogueX+10,dialogueY + dialogueHeight-10,"Press E To Continue")
+draw_text(20,display_get_gui_height() - 30,"Try Refreshing if inputs don't work!")
+}

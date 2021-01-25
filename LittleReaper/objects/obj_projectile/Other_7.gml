@@ -16,5 +16,8 @@ if(sprite_index = spr_popSpawn)
 }
 	
 if(sprite_index = spr_popExplode)
+{
 	instance_destroy()
+	audio_play_sound(snd_projectileExplode,0,0)	
+}
 	

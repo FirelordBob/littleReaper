@@ -15,5 +15,5 @@ if(!other.invuln && swing && other.hp>0)
 	other.hitTimer = other.hitMax
 	other.bounce = 1
 	other.hp -= 1
-
+	audio_play_sound(snd_hitEnemy,0,0)
 }

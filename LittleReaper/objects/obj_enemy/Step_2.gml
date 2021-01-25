@@ -79,6 +79,8 @@ if(hp <= 0)
 	
 	image_yscale = - 1
 	y += sprite_height
+	audio_play_sound(snd_soul,0,0)
+	
 	with(instance_create_depth(x,y,depth-1,obj_soul))
 		follow = other.id
 	}

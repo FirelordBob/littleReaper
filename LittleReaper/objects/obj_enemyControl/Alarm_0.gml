@@ -34,7 +34,7 @@ if(currentEnemy > 20 && gameLevel >=2)
 	newEnemy = obj_bigRat	
 }
 else
-	newEnemy =  obj_bigRat
+	newEnemy = obj_enemy
 		
 
 instance_create_depth(player.x + side*view_wport[0], room_height - 300, -2, newEnemy )

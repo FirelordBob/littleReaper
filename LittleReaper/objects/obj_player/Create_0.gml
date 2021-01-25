@@ -30,7 +30,7 @@ hp = maxHp
 keyLeft = ord("A")
 keyRight = ord("D")
 keySprint = vk_shift
-keyJump = vk_space
+keyJump = ord("W")
 bounce = 0
 global.useController = 0
 
