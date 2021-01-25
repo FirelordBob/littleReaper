@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-end1 = 1
+roundOver = 1
+room_goto(room_start)

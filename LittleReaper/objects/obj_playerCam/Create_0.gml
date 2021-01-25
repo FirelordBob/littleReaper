@@ -4,7 +4,7 @@ player = noone
 
 for(var i = 0; i < 10; i++)
 {
-	distance = irandom_range(room_height*3/4,room_height)
+	distance = irandom_range(room_height*3/4,room_height*5/6)
 	var new_scale = distance/room_height
 	with(instance_create_depth(irandom_range(1.5*view_wport[0], room_width-1.5*view_wport[0]),distance,99 - new_scale*20,obj_bg)	)
 	{
