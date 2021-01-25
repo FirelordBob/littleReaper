@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-with(obj_gui)
+if(hp <= 0 && souls != 0)
 {
-	souls += other.souls	
+	with(obj_gui)
+	{
+		souls += other.souls	
+	}
+	souls = 0
 }

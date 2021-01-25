@@ -6,3 +6,4 @@ display_set_gui_size(_vx, _vy);
 
 audio_play_sound(song1,0,1)
 room_goto_next()
+randomize()

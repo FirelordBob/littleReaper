@@ -20,7 +20,13 @@ if(level < levelMax)
 currentEnemy = irandom_range(0,level)
 newEnemy = noone
 
-if(currentEnemy > 45)	
+var gameLevel = 0
+with(obj_gui)
+{	
+	gameLevel = level
+}
+
+if(currentEnemy > 45 && gameLevel >=2)	
 {
 	newEnemy = obj_bigRat	
 }

@@ -6,4 +6,5 @@ invulnTimer = 30
 reflected = 0
 deathTimer = 300
 souls = 0
+hp = 0
 alarm[1] = deathTimer

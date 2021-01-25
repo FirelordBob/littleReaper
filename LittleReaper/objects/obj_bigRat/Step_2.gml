@@ -64,3 +64,4 @@ if(hit)
 		bounce = 0	
 	}
 }
+image_index = hp

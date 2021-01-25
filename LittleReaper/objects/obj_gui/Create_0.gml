@@ -4,4 +4,4 @@ timer = 60*room_speed
 alarm[0] = timer
 
 souls = 0
-
+level = 1

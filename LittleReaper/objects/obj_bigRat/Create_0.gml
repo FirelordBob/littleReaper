@@ -29,7 +29,7 @@ bounce = 0
 hit = 0
 hitTimer = 0
 hitMax = 120
-hp = 15
+hp = 12
 
 fireAlarm = 180
 alarm[0] = fireAlarm/3
@@ -37,3 +37,4 @@ moveTimer = 30
 stand = 0
 
 souls = 5
+image_speed = 0
