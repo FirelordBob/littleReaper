@@ -5,7 +5,7 @@ if(!hit && !other.invuln)
 hit = 1
 alarm[0] = hitTime
 other.invuln = 1
-other.invulnTimer = other.timerMax
+other.alarm[0] = other.invulnTimer
 other.sprite_index = spr_popExplode
 other.speed = 0	
 

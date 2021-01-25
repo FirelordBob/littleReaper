@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.28,
+  "volume": 0.72,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "song1.wav",
-  "duration": 41.605,
+  "soundFile": "song2.mp3",
+  "duration": 96.03106,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "song1",
+  "name": "song2",
   "tags": [],
   "resourceType": "GMSound",
 }

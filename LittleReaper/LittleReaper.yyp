@@ -21,6 +21,7 @@
     {"id":{"name":"spr_playerWalk","path":"sprites/spr_playerWalk/spr_playerWalk.yy",},"order":0,},
     {"id":{"name":"snd_bigRat","path":"sounds/snd_bigRat/snd_bigRat.yy",},"order":6,},
     {"id":{"name":"obj_startGame","path":"objects/obj_startGame/obj_startGame.yy",},"order":17,},
+    {"id":{"name":"song2","path":"sounds/song2/song2.yy",},"order":9,},
     {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},"order":1,},
     {"id":{"name":"obj_enemyControl","path":"objects/obj_enemyControl/obj_enemyControl.yy",},"order":12,},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},"order":8,},
